@@ -47,7 +47,7 @@ namespace calculadoraSimples
 
         public override string ToString()
         {
-            return $"Seu resultado é: {Resultado}";
+            return $"Seu resultado é: {Math.Round(Resultado, 2)}";
         }
     }
 }

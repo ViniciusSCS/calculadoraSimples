@@ -6,7 +6,6 @@ namespace calculadoraSimples
     {
         static void Main(string[] args)
         {
-            double resultado = 0;
 
             Console.WriteLine("Calculadora C#\r");
             Console.WriteLine("------------------------\n");
@@ -28,6 +27,23 @@ namespace calculadoraSimples
 
             Calculadora calc = new Calculadora(num1, num2);
 
+            if (num2 == 0)
+                Console.WriteLine("Não é possível dividir por zero.");
+            else
+            {
+                Calcular(num1, num2, operador, calc);
+
+                Console.WriteLine($"{calc}");
+            }
+        }
+
+        static double Calcular(
+            double num1,
+            double num2,
+            int operador,
+            Calculadora calc)
+        {
+            double resultado = 0;
             switch (operador)
             {
                 case 1:
@@ -47,8 +63,7 @@ namespace calculadoraSimples
                     break;
             }
 
-            Console.WriteLine($"{calc}");
-
+            return resultado;
         }
     }
 }
