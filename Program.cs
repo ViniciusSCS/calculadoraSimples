@@ -10,7 +10,7 @@ namespace calculadoraSimples
             Console.WriteLine("Calculadora C#\r");
             Console.WriteLine("------------------------\n");
 
-            Console.WriteLine("Tipo de Calculo:");
+            Console.WriteLine("Tipo de Cálculo:");
             Console.WriteLine("\t1 - Adição");
             Console.WriteLine("\t2 - Subtração");
             Console.WriteLine("\t3 - Multiplicação");
@@ -18,7 +18,7 @@ namespace calculadoraSimples
             Console.WriteLine("\t5 - Porcentagem");
             Console.WriteLine("\t6 - Potência");
             Console.WriteLine("\t7 - Raiz");
-            Console.Write("Escolha o tipo de Calculo? ");
+            Console.Write("Escolha o tipo de cálculo? ");
 
             int tipoCalculo = int.Parse(Console.ReadLine()!);
 
