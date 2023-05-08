@@ -10,17 +10,9 @@ namespace calculadoraSimples
             Console.WriteLine("Calculadora C#\r");
             Console.WriteLine("------------------------\n");
 
-            Console.WriteLine("Tipo de Cálculo:");
-            Console.WriteLine("\t1 - Adição");
-            Console.WriteLine("\t2 - Subtração");
-            Console.WriteLine("\t3 - Multiplicação");
-            Console.WriteLine("\t4 - Divisão");
-            Console.WriteLine("\t5 - Porcentagem");
-            Console.WriteLine("\t6 - Potência");
-            Console.WriteLine("\t7 - Raiz");
-            Console.Write("Escolha o tipo de cálculo? ");
+            Menu tc = new Menu();
 
-            int tipoCalculo = int.Parse(Console.ReadLine()!);
+            int tipoCalculo = tc.TipoCalculo();
 
             Console.Write("Digite o primeiro número: ");
             double num1 = double.Parse(Console.ReadLine()!, CultureInfo.InvariantCulture);
