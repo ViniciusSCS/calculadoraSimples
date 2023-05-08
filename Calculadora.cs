@@ -1,3 +1,4 @@
+using System.Globalization;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -47,7 +48,7 @@ namespace calculadoraSimples
 
         public override string ToString()
         {
-            return $"Seu resultado é: {Math.Round(Resultado, 2)}";
+            return $"Seu resultado é: {Resultado.ToString("F2", CultureInfo.InvariantCulture)}";
         }
     }
 }
