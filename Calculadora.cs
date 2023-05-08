@@ -57,13 +57,6 @@ namespace calculadoraSimples
             return Resultado;
         }
 
-        public double Raiz(double num1, double num2)
-        {
-            Resultado = num1 * (1 / num2);
-            return Resultado;
-        }
-
-
         public override string ToString()
         {
             return $"Seu resultado é: {Resultado.ToString("F2", CultureInfo.InvariantCulture)}";

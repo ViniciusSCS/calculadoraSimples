@@ -55,9 +55,6 @@ namespace calculadoraSimples
                 case 6:
                     resultado = calc.Potencia(num1, num2);
                     break;
-                case 7:
-                    resultado = calc.Raiz(num1, num2);
-                    break;
                 default:
                     Console.WriteLine($"Número inválido digite outro número");
                     break;

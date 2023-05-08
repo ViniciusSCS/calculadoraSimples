@@ -16,7 +16,6 @@ namespace calculadoraSimples
             Console.WriteLine("\t4 - Divisão");
             Console.WriteLine("\t5 - Porcentagem");
             Console.WriteLine("\t6 - Potência");
-            Console.WriteLine("\t7 - Raiz");
             Console.Write("Escolha o tipo de cálculo? ");
 
             int tipoCalculo = int.Parse(Console.ReadLine()!);
