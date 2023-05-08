@@ -22,14 +22,9 @@ namespace calculadoraSimples
 
             Calculadora calc = new Calculadora(num1, num2);
 
-            if (num2 == 0)
-                Console.WriteLine("Não é possível dividir por zero.");
-            else
-            {
-                Calcular(num1, num2, tipoCalculo, calc);
+            Calcular(num1, num2, tipoCalculo, calc);
 
-                Console.WriteLine($"{calc}");
-            }
+            Console.WriteLine($"{calc}");
         }
 
         static double Calcular(
