@@ -20,6 +20,7 @@ namespace calculadoraSimples
             Num1 = num1;
             Num2 = num2;
         }
+
         public double Adicao(double num1, double num2)
         {
             Resultado = num1 + num2;
