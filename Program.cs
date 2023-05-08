@@ -41,7 +41,8 @@ namespace calculadoraSimples
             double num1,
             double num2,
             int operador,
-            Calculadora calc)
+            Calculadora calc
+        )
         {
             double resultado = 0;
             switch (operador)
