@@ -15,6 +15,7 @@ namespace calculadoraSimples
             Console.WriteLine("\t2 - Subtração");
             Console.WriteLine("\t3 - Multiplicação");
             Console.WriteLine("\t4 - Divisão");
+            Console.WriteLine("\t5 - Porcentagem");
             Console.Write("Escolha o operador? ");
 
             int operador = int.Parse(Console.ReadLine()!);
@@ -58,6 +59,9 @@ namespace calculadoraSimples
                     break;
                 case 4:
                     resultado = calc.Divisao(num1, num2);
+                    break;
+                case 5:
+                    resultado = calc.Porcentagem(num1, num2);
                     break;
                 default:
                     Console.WriteLine($"Número inválido digite outro número");

@@ -40,9 +40,13 @@ namespace calculadoraSimples
 
         public double Divisao(double num1, double num2)
         {
-            // if (num2 == 0) "Não é possível dividir por zero.";
-
             Resultado = num1 / num2;
+            return Resultado;
+        }
+
+        public double Porcentagem(double num1, double num2)
+        {
+            Resultado = ((num2 * 100) / num1) - 100;
             return Resultado;
         }
 
